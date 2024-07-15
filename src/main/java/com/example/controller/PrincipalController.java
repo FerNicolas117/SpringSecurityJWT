@@ -60,6 +60,6 @@ public class PrincipalController {
     @DeleteMapping(path = "/deleteUser")
     public String deleteUser(@RequestParam String id) {
         userRepository.deleteById(Long.parseLong(id));
-        return "Se ha eliminado el User con id: ".concat(id);
+        return "Se ha eliminado el User antes registrado con el id: ".concat(id);
     }
 }
